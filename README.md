@@ -5,24 +5,24 @@ No jogo, você abriga e reproduz diversos gatos que, posteriormente, são usados
 
 **O projeto se divide na seguinte estrutura:**
 - components  
-⤷ CardGato  
-    ⤷ index.jsx  
-    ⤷ style.jsx  
-⤷ CardNPC  
-    ⤷ index.jsx  
-    ⤷ style.jsx  
-⤷ Header  
-    ⤷ index.jsx  
-    ⤷ style.jsx  
+    - CardGato  
+        - index.jsx  
+        - style.jsx  
+    - CardNPC  
+        - index.jsx  
+        - style.jsx  
+    - Header  
+        - index.jsx  
+        - style.jsx  
 - data  
-⤷ dadosGatos.jsx  
-⤷ dadosNPC.jsx  
+    - dadosGatos.jsx  
+    - dadosNPC.jsx  
 - pages  
-⤷ adicionarGatos  
-⤷ listaDeGatos  
-⤷ listaDeNPCs  
+    - adicionarGatos  
+    - listaDeGatos  
+    - listaDeNPCs  
 - styles  
-⤷ global.jsx  
+    - global.jsx  
 - App.jsx  
 - main.jsx  
 
