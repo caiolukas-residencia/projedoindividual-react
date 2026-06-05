@@ -29,21 +29,19 @@ export function ListarGatos() {
     const npcAceitaGato = (npc, gato) => {
         switch (npc.id) {
             case 1:
-                return gato.temMutacao || gato.temDesordem || gato.temParasita;
+                return (gato.temMutacao || gato.temDesordem || gato.temParasita) && gato.vivo;
             case 2:
-                return gato.aposentado && gato.experiencia >= 10;
+                return (gato.aposentado && gato.experiencia >= 10) && gato.vivo;
             case 3:
-                return gato.aposentado;
+                return gato.aposentado && gato.vivo;
             case 4:
-                return gato.idade === 1;
+                return (gato.idade === 1) && gato.vivo;
             case 5:
-                return gato.idade >= 5;
+                return (gato.idade >= 5) && gato.vivo;
             case 6:
-                return gato.temFerimento;
+                return gato.temFerimento && gato.vivo;
             case 7:
                 return !gato.vivo;
-            case 8:
-                return false;
             default:
                 return false;
         }
