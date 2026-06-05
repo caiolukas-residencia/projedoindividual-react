@@ -1,3 +1,5 @@
+import * as S from "./style.jsx"
+
 const locaisAventura = {
     1: "Beco",
     2: "Esgoto/Ferro-velho",
@@ -14,14 +16,21 @@ const locaisAventura = {
 }
 
 export function CardGato({ gato, aoSelecionar, estaSelecionado }) {
+    if (!gato) {
+        return <div style={{ border: '1px solid red', padding: '10px' }}>Erro: Gato não encontrado</div>;
+    }
+    
     return (
-        <div onClick = {() => aoSelecionar(gato.id)}>
-            <img src={gato.imagem} alt={gato.nome}/>
-            <h3>{gato.nome}</h3>
-            <p>Sexo: {gato.sexo}</p>
-            <p>Idade: {gato.idade} anos</p>
-            <p>Status: {gato.vivo ? "Vivo" : "Morto"}</p>
-            <small>Viajou até: {locaisAventura[gato.experiencia] || "Desconhecido"}</small>
-        </div>
+        <S.CardContainer>
+            <S.FotoGato src={gato.imagem} alt={gato.nome} />
+
+            <S.InfoGato>
+                <h3>{gato.nome}</h3>
+                <p><strong>Sexo:</strong> {gato.sexo}</p>
+                <p><strong>Idade: {gato.idade}</strong> anos</p>
+                <p><strong>Status:</strong> {gato.vivo ? "Vivo" : "Morto"}</p>
+                <small>Viajou até: {locaisAventura[gato.experiencia] || "-"}</small>
+            </S.InfoGato>
+        </S.CardContainer>
     )
 }
