@@ -4,27 +4,27 @@ Repositório para o trabalho individual de React do Serratec. O tema escolhido f
 No jogo, você abriga e reproduz diversos gatos que, posteriormente, são usados em combate e/ou doados a NPCs para conseguir recompensas. Cada NPC precisa de gatos com características específicas, e você envia eles através de um cano para o destinatário apropriado. A ideia foi adaptar essa mecânica para uma aplicação onde é possível gerir o envio dos gatos através de uma interface. (Ah, o Steven também aparece, por algum motivo.)
 
 **O projeto se divide na seguinte estrutura:**
-- components
-⤷ CardGato
-    ⤷ index.jsx
-    ⤷ style.jsx
-⤷ CardNPC
-    ⤷ index.jsx
-    ⤷ style.jsx
-⤷ Header
-    ⤷ index.jsx
-    ⤷ style.jsx
-- data
-⤷ dadosGatos.jsx
-⤷ dadosNPC.jsx
-- pages
-⤷ adicionarGatos
-⤷ listaDeGatos
-⤷ listaDeNPCs
-- styles
-⤷ global.jsx
-- App.jsx
-- main.jsx
+- components  
+⤷ CardGato  
+    ⤷ index.jsx  
+    ⤷ style.jsx  
+⤷ CardNPC  
+    ⤷ index.jsx  
+    ⤷ style.jsx  
+⤷ Header  
+    ⤷ index.jsx  
+    ⤷ style.jsx  
+- data  
+⤷ dadosGatos.jsx  
+⤷ dadosNPC.jsx  
+- pages  
+⤷ adicionarGatos  
+⤷ listaDeGatos  
+⤷ listaDeNPCs  
+- styles  
+⤷ global.jsx  
+- App.jsx  
+- main.jsx  
 
 A página que lista os gatos é tratada como Home devido ao contexto. A pasta styles foi criada para armazenar um arquivo de estilo global. A aplicação já vem com alguns gatos preenchidos, armazenando possíveis novos gatos no LocalStorage. Gatos que são doados são removidos dos dados locais. O sistema previne entrada inválida de dados, em nível básico, ao adicionar um gato, além de impedir doações indevidas, filtrando automaticamente para quem é possível doar.
 
