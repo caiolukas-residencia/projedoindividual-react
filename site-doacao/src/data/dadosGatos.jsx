@@ -44,6 +44,7 @@ export const dadosGatos = [
             Saber se o gato está vivo ou morto é relevante para a verificação do Organ Grinder ("???"), então o gato não sai do registro quando morre, apenas 
             quando é doado.
         vivo: false
+        imagem: "..."
     }    
     */
     {
@@ -57,7 +58,8 @@ export const dadosGatos = [
         temFerimento: true,
         aposentado: true,
         experiencia: 11,
-        vivo: true
+        vivo: true,
+        imagem: "https://i.pinimg.com/236x/3c/b6/d2/3cb6d2482c74613715d7c28ffe199ebb.jpg"
     },
     {
         id: 2,
@@ -70,7 +72,8 @@ export const dadosGatos = [
         temFerimento: false,
         aposentado: true,
         experiencia: 7,
-        vivo: true
+        vivo: true,
+        imagem: "https://i.ytimg.com/vi/fTJ5o_uW3eM/mqdefault.jpg"
     },
     {
         id: 3,
@@ -83,6 +86,7 @@ export const dadosGatos = [
         temFerimento: false,
         aposentado: false,
         experiencia: 0,
-        vivo: true
+        vivo: true,
+        imagem: "https://media.istockphoto.com/id/1136759503/photo/close-up-kitten-crazy-cat-licking-mouth-with-tongue-cute-blue-british-kitten-crazy-cat-funny.jpg?s=612x612&w=0&k=20&c=jurFQQkbjJ7_SXr-rswDACGu6gbaPjcE3DMiJeIbuuw="
     }
 ]
