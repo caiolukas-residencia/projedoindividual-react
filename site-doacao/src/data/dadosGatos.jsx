@@ -36,8 +36,8 @@ export const dadosGatos = [
             11 - Jurássico/Fim
             12 - Infinito
 
-            Teoricamente, a "distância de aventura" entre um gato que foi ao Domínio Pulsante, à Ruptura e ao infinito são iguais, considerando que o jogo segue 
-            a estrutura de capítulos e todos são o capítulo 4 de seus respectivos atos. Porém, o jogo considera que cada ato tem um "peso" diferente; ir ao 
+            Teoricamente, a "distância de aventura" entre um gato que foi ao Domínio Pulsante, à Ruptura e ao Infinito são iguais, considerando que o jogo segue 
+            a estrutura de capítulos e todos são o quarto capítulo de seus respectivos atos. Porém, o jogo considera que cada ato tem um "peso" diferente; ir ao 
             Domínio Pulsante é apenas uma viagem extensa, enquanto que a ruptura ultrapassa os limites físicos e o infinito ultrapassa os limites do tempo. Por
             isso o ranqueamento progressivo.
         experiencia: 0,
