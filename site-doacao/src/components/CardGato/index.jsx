@@ -1,4 +1,6 @@
 import * as S from "./style.jsx"
+import { FaCheck } from "react-icons/fa";
+import { FaXmark } from "react-icons/fa6";
 
 const locaisAventura = {
     1: "Beco",
@@ -27,8 +29,13 @@ export function CardGato({ gato, aoSelecionar, estaSelecionado }) {
             <S.InfoGato>
                 <h3>{gato.nome}</h3>
                 <p><strong>Sexo:</strong> {gato.sexo}</p>
-                <p><strong>Idade: {gato.idade}</strong> anos</p>
+                <p><strong>Idade: {gato.idade}</strong> {gato.idade > 1 ? "anos" : "ano"}</p>
                 <p><strong>Status:</strong> {gato.vivo ? "Vivo" : "Morto"}</p>
+                <br></br>
+                <p><strong>Mutação: </strong> {gato.temMutacao ? <FaCheck /> : <FaXmark />}</p>
+                <p><strong>Desordem: </strong> {gato.temDesordem ? <FaCheck /> : <FaXmark />}</p>
+                <p><strong>Parasita: </strong> {gato.temParasita ? <FaCheck /> : <FaXmark />}</p>
+                <p><strong>Ferimento: </strong> {gato.temFerimento ? <FaCheck /> : <FaXmark />}</p>
                 <small>Viajou até: {locaisAventura[gato.experiencia] || "-"}</small>
             </S.InfoGato>
         </S.CardContainer>

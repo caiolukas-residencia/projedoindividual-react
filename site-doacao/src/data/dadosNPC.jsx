@@ -58,7 +58,7 @@ export const dadosNPC = [
     {
         id: 7,
         // No jogo, o personagem usa o seu nome de usuário. Uma boa ideia seria usar o nome do usuário logado.
-        nome: "???",
+        nome: "Organ Grinder",
         requisito: "Gatos mortos.",
         recompensa: "Seringa de desordem aleatória.",
         imagem: "https://mewgenics.wiki.gg/images/NPC_Organ_Grinder.svg?9cf519"

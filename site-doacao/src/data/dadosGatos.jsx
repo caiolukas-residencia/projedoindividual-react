@@ -64,7 +64,7 @@ export const dadosGatos = [
     {
         id: 2,
         nome: "Jackira",
-        sexo: "Femea",
+        sexo: "Fêmea",
         idade: 5,
         temMutacao: true,
         temDesordem: false,

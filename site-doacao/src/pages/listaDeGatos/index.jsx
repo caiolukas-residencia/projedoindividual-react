@@ -42,14 +42,27 @@ export function ListarGatos() {
                 return gato.temFerimento;
             case 7:
                 return !gato.vivo;
+            case 8:
+                return false;
             default:
                 return false;
         }
     }
+
+    const obterTextoBotao = (npc, aceita) => {
+        if(npc.id === 8) {
+            return "Desencana, querida!";
+        }
+        
+        if(!aceita) {
+            return "Não aceita";
+        }
+
+        return "Confirmar doação"
+    }
     
     return (
         <S.ContainerTela>
-            <h1>Gatos abrigados em casa: </h1>
 
             <S.GridGatos>
                 {listaDeGatos.map(gato => (
@@ -78,7 +91,7 @@ export function ListarGatos() {
                                         <h4>{npc.nome}</h4>
 
                                         <button disabled={!aceita} onClick={confirmarDoacao}>
-                                            {aceita ? "Confirmar doação" : "Não aceita"}
+                                            {obterTextoBotao(npc, aceita)}
                                         </button>
                                     </S.SelecaoNPC>
                                 )

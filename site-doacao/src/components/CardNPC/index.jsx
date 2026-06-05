@@ -1,10 +1,12 @@
-export function CardNPC({ npc, nomeJogador }) {
+import * as S from "./style.jsx"
+
+export function CardNPC({ npc }) {
     return (
-        <div>
-            <img src={npc.imagem} alt={npc.nome}/>
-            <h3>{npc.id === 7 ? nomeJogador : npc.nome}</h3>
+        <S.CardContainer>
+            <S.FotoNPC src={npc.imagem} alt={npc.nome}/>
+            <h3>{npc.nome}</h3>
             <p><strong>Requisito: </strong>{npc.requisito}</p>
             <p><strong>Recompensa: </strong>{npc.recompensa}</p>
-        </div>
+        </S.CardContainer>
     )
 }
